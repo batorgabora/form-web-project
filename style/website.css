@@ -1,0 +1,347 @@
+body {
+  background-color: #F5F5F5;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
+h1{
+  text-align: center;
+  color: #5050EB;;
+  font-size: 40px;
+}
+h2, h3 {
+  text-align: center;
+  color: #5050EB;;
+  font-size: 25px;
+}
+h3{
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+/* BÁTOR'S PART */
+
+fieldset {
+  border: 2px solid #5050EB;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+input:not([type="submit"]):invalid, 
+textarea:invalid,
+select:invalid {
+  border: 2px solid #fa9494;
+  border-radius: 5px;
+  background-color: white; 
+}
+
+input[type="file"]:invalid {
+  border: 2px solid #fa9494;
+  border-radius: 5px;
+}
+
+fieldset input:invalid:not([type="radio"]):not([type="checkbox"]) {
+  outline: 2px solid #fa9494;
+
+}
+
+fieldset input[type="radio"],
+fieldset input[type="checkbox"] {
+  outline: none;
+}
+
+input[type="radio"]:invalid,
+input[type="checkbox"]:invalid {
+  accent-color: #fa9494;
+}
+
+select {
+  min-width: 160px;
+  max-width: 250px;
+  padding: 6px 12px;
+  border: 2px solid #6a5acd;  
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+select:hover,
+select:focus {
+  border: 2px solid #5a4ac7;
+  box-shadow: 0 0 6px rgba(106, 90, 205, 0.3);
+}
+
+select option {
+  color: #333;
+  background-color: white;
+}
+
+
+.slider{
+  width: 60%;
+  margin: 0 auto; 
+}
+
+.sliderBorder{
+  text-align: center; 
+  padding: 20px;
+}
+
+.value {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+@media screen and (min-width: 600px) {
+ .container {
+  max-width: 100%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+  #Names {
+  font-size: 21px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#Names .name-fields {
+  display: flex;
+  gap: 1rem; 
+}
+
+#Names .field {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+#Names fieldset {
+  flex: 1;
+  width: 100%;             
+  box-sizing: border-box;    
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+#BirthdayGender {
+  display: flex;
+  gap: 1rem;          
+  width: 100%;      
+  box-sizing: border-box;
+}
+
+
+#BirthdayGender > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#BirthdayGender fieldset {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#EmailPhone {
+  display: flex;
+  gap: 1rem;          
+  width: 100%;      
+  box-sizing: border-box;
+}
+
+
+#EmailPhone > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#EmailPhone fieldset {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+#CountryBranch {
+  display: flex;
+  gap: 1rem;          
+  width: 100%;      
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+
+#CountryBranch > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#CountryBranch fieldset {
+  width: 100%;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+
+#WorkDriving  {
+  display: flex;
+  gap: 1rem;          
+  width: 100%;      
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+
+#WorkDriving  > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#WorkDriving fieldset {
+  width: 100%;
+  flex: 1;
+  box-sizing: border-box;
+}
+#EducationLanguage {
+  display: flex;
+  gap: 1rem;          
+  width: 100%;      
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+
+#EducationLanguage  > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#EducationLanguage fieldset {
+  width: 100%;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+
+#workexperience  {
+  display: flex;
+  gap: 1rem;          
+  width: 100%;      
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+
+#workexperience   > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#workexperience fieldset {
+  width: 100%;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+
+#JobType  {
+  display: flex;
+  gap: 1rem;          
+  width: 100%;      
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+
+#JobType   > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#JobType fieldset {
+  width: 100%;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+
+#SalaryCV  {
+  display: flex;
+  gap: 1rem;          
+  width: 100%;      
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+
+#SalaryCV  > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#SalaryCV fieldset {
+  width: 100%;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+#Button {
+  display: block;               
+  width: 100%;                  
+  padding: 15px 0;              
+  font-size: 20px;             
+  font-weight: bold;
+  color: white;                 
+  background-color: #5050EB;    
+  border: none;                 
+  border-radius: 8px;           
+  cursor: pointer;
+ 
+  margin-top: 15px;            
+}
+
+input[type="file"] {
+width: 100%;
+padding: 12px 16px;
+font-size: 20px;
+font-weight: 500;
+border-radius: 8px;
+margin: 8px 0;
+}
+}

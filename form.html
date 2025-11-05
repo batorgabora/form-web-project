@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/website.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+    <title>application form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <h3>&#128129; Personal Information</h3>
+        <form action="http://www.no-where.com/formhandler.php" method="get">
+            <div class="bordery">
+                <div id="Names">
+                    <div class="name-fields">
+                        <div class="field">
+                            <fieldset>
+                                <legend>First Name</legend>
+                                <input type="text" name="firstName" id="firstName" placeholder="Ben" required>
+                            </fieldset>
+                        </div>
+                        <div class="field">
+                            <fieldset>
+                                <legend>Last Name</legend>
+                                <input type="text" name="lastName" id="lastName" placeholder="Dover" required>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="BirthdayGender">
+                    <div>
+                        <fieldset>
+                            <legend>Birthday*</legend>
+                            <input type="date" name="Birthday" id="Birthday" required>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Gender*</legend>
+                            <input type="radio" name="gender" value="male" id="male" required>
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" value="female" id="female">
+                            <label for="female">Female</label>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div id="EmailPhone">
+                    <div>
+                        <fieldset>
+                            <legend>Phone number*</legend>
+                            <input type="tel" id="phone" name="phone" pattern="^\+?[0-9\s]{8,20}$"
+                                title="Please enter a valid phone number (e.g. +45 12 34 56 78)"
+                                placeholder="+45 12 34 56 78" required>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Email*</legend>
+                            <input type="email" id="email" name="email" title="Please enter a valid email address"
+                                placeholder="johnsmith@mail.com" required>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div id="CountryBranch">
+                    <div>
+                        <fieldset>
+                            <legend>What is your nationality?*</legend>
+                            <select name="country" id="Country" required>
+                                <option value="" disabled selected>Select your country</option>
+                                <option value="romania">Romania</option>
+                                <option value="denmark">Denmark</option>
+                                <option value="germany">Germany</option>
+                                <option value="sweden">Sweden</option>
+                                <option value="hungary">Hungary</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Branch or city to work in* </legend>
+                            <input type="radio" name="city" value="horsens" id="horsens" required>
+                            <label for="horsens">Horsens</label> <br>
+                            <input type="radio" name="city" value="herning" id="herning">
+                            <label for="herning">Herning</label> <br>
+                            <input type="radio" name="city" value="vejle" id="vejle">
+                            <label for="vejle">Vejle</label>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div id="WorkDriving">
+                    <div>
+                        <fieldset>
+                            <legend>Work Permit:* </legend>
+                            <input type="radio" name="permit" value="yes_permit" id="yes_permit" required>
+                            <label for="yes_permit">Yes</label>
+                            <input type="radio" name="permit" value="no_permit" id="no_permit">
+                            <label for="no_permit">No</label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Driving License:* </legend>
+                            <input type="radio" name="license" value="yes_license" id="yes_license" required>
+                            <label for="yes_license">Yes</label>
+                            <input type="radio" name="license" value="no_license" id="no_license">
+                            <label for="no_license">No</label>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div id="EducationLanguage">
+                    <div>
+                        <fieldset>
+                            <legend>Highest level of education*</legend>
+                            <input type="radio" name="education" value="high_school_diploma" id="high_school_diploma"
+                                required>
+                            <label for="high_school_diploma">High School Diploma</label>
+                            <input type="radio" name="education" value="bachelor" id="bachelor">
+                            <label for="bachelor">Bachelor</label>
+                            <input type="radio" name="education" value="master" id="master">
+                            <label for="master">Master</label>
+                        </fieldset>
+                    </div>
+
+                    <div>
+                        <!-- can't validate without javascript-->
+                        <fieldset>
+                            <legend>Languages</legend>
+                            <input type="checkbox" name="language" value="english" id="english">
+                            <label for="english">English</label>
+                            <input type="checkbox" name="language" value="danish" id="danish">
+                            <label for="danish">Danish</label>
+                            <input type="checkbox" name="language" value="german" id="german">
+                            <label for="german">German</label>
+                            <input type="checkbox" name="language" value="romanian" id="romanian">
+                            <label for="romanian">Romanian</label>
+                            <input type="checkbox" name="language" value="hungarian" id="hungarian">
+                            <label for="hungarian">Hungarian</label>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+
+            <h3>&#128188; Work Experience</h3>
+            <div class="bordery">
+                <div id="workexperience">
+                    <div>
+                        <fieldset>
+                            <legend>Previous experiences</legend>
+                            <textarea name="Comments" id="job_experience" placeholder="Tell us your experiences"
+                                maxlength="1000" required></textarea>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Skills</legend>
+                            <input type="checkbox" name="programming" value="java" id="java">
+                            <label for="java">Java</label>
+                            <input type="checkbox" name="programming" value="c++" id="c++"> <label for="c++">C++</label>
+                            <input type="checkbox" name="programming" value="html" id="html">
+                            <label for="html">HTML</label>
+                            <input type="checkbox" name="programming" value="c#" id="c#">
+                            <label for="c#">C#</label>
+                            <input type="checkbox" name="programming" value="js" id="js">
+                                <label for="js">Java Script</label>
+                            <input type="checkbox" name="programming" value="noSkills" id="noSkills">
+                            <label for="noSkills">I don't have any skills</label>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+             
+            <h3>&#128176; Job Preference</h3>
+            <div class="bordery">
+                <div class="Job Preferences">
+                    <div id="JobType">
+                        <div>
+                            <fieldset>
+                                <legend>Wanted Position*</legend>
+                                <input type="radio" name="job" value="software_engineering" id="software_engineering"
+                                    required>
+                                <label for="software_engineering">Software Engineering</label>
+                                <input type="radio" name="job" value="data_analyst" id="data_analyst">
+                                <label for="data_analyst">Data Analyst </label>
+                                <input type="radio" name="job" value="product_development" id="product_development">
+                                <label for="product_development">Product Development </label>
+                            </fieldset>
+                        </div>
+                        <div>
+                            <fieldset>
+                                <legend>Employment type*: </legend>
+                                <input type="radio" name="worktype" value="full_time" id="full_time" required>
+                                <label for="full_time">Full-time</label>
+                                <input type="radio" name="worktype" value="part_time" id="part_time">
+                                <label for="part_time">Part-time</label>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div id="SalaryCV">
+                        <div>
+                            <fieldset class="sliderBorder">
+                                <legend>Expected Salary*</legend>
+                                <div class="slider-container" data-min="0" data-max="100000" data-step="100">
+                                    <input type="range" min="0" max="10000" step="100" value="50000" class="slider"
+                                        id="myRange">
+                                    <div class="value" id="sliderValue">0 to 30,000</div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+<!-- can't make it look aesthetically pleasing without javascript-->
+                        <div>
+                            <fieldset>
+                                <legend>CV*</legend>
+                                <input type="file" name="cv" id="cv" title="No file selected" required>
+                            </fieldset>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+ 
+            <input id="Button" type="submit" value="Submit">
+        </form>
+            
+        <a href="landingPage.html">sex</a>
+    </div>
+</body>
+
+</html>

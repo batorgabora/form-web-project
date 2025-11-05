@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    background-color: #F0F0F0;
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.4);
+    width: 90%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 5%;
+}
+
+
+.title{
+    
+    color: #2B2A76;
+    font-size: 100px;
+}
+
+.smallTitle{
+    color: #7A7BD3;
+    font-size: 60px;
+    align-items: center;
+}
+.description{
+    font-size: 20px;
+}
+p{
+    margin: 10px;
+    margin-left: 50px;
+}
+
+button{
+    background-color: #0cb291;
+    border-radius: 4px;
+    
+}
+
+.button{
+    height: 40px;
+    width: 150px;
+    border-radius: 6px
+    
+}
+.apply{
+    text-decoration: none;
+    color: white;
+}
+.buttoncenter{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 37%;
+}
+.buttonApply{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    font-style: italic;
+    
+    
+    border: 2px solid #0cb291;
+    background-color: #0cb291;
+    padding: 15px 30px 15px 30px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        flex-direction: column;
+    }
+    .buttoncenter{
+        margin: 4%;
+        margin-left: 38%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .container{
+        flex-direction: column;
+    }
+    .buttoncenter{
+        margin: 4%;
+        margin-left: 20%;
+    }
+
+    .buttonApply{
+    
+    padding: 10px 20px 10px 30px;
+    
+}
+    p{
+        margin-left: 2%;
+        margin: 3%;
+    }
+    .image{
+        height: auto;
+        width: 100%;
+    }
+    .description{
+        font-size: 15px;
+    }
+    .title{
+        font-size: 70px;
+    }
+    .smallTitle{
+        font-size: 40px;
+    }
+}
